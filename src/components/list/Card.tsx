@@ -32,6 +32,7 @@ const Card: FC<Props> = ({ car }) => {
         <div>
           <img
             src={getImage(car)}
+            alt={car.make + " " + car.model}
             className="size-full object-contain min-h-[200px]"
           />
         </div>
@@ -44,6 +45,7 @@ const Card: FC<Props> = ({ car }) => {
 
           <div className="hidden group-hover:block">
             <Button
+              name="load more"
               text="Daha Fazla"
               designs="w-full mt-[0.5px"
               fn={() => setIsOpen(true)}

@@ -9,6 +9,7 @@ const Header: FC = () => {
         <Link to="/" className="flex items-center gap-3">
           <img
             src="/logo.png"
+            alt="bmw logo"
             width={50}
             height={50}
             className="drop-shadow-lg hover:scale-105 transition-transform duration-300"
@@ -19,7 +20,7 @@ const Header: FC = () => {
           </h1>
         </Link>
 
-        <Button text="Kaydol" />
+        <Button text="Kaydol" name="register" />
       </div>
     </header>
   );

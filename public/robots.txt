@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin-dashboard
+
+
+Sitemap: https://car-hub-projectt.vercel.app/sitemap.xml

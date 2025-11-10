@@ -12,21 +12,34 @@ const Images: FC<Props> = ({ car }) => {
       <div className="w-full h-80">
         <img
           src={getImage(car, "", true)}
+          alt={car.make + " " + car.model}
           className="size-full object-cover rounded-md"
         />
       </div>
 
       <div className="flex gap-3 my-3">
         <div className="rounded flex-1 flex relative h-30 bg-primary-blue-100">
-          <img src={getImage(car, "29")} className="mx-auto object-contain" />
+          <img
+            src={getImage(car, "29")}
+            alt={car.make + " " + car.model + "front view"}
+            className="mx-auto object-contain"
+          />
         </div>
 
         <div className="rounded flex-1 flex relative h-30 bg-primary-blue-100">
-          <img src={getImage(car, "33")} className="mx-auto object-contain" />
+          <img
+            src={getImage(car, "33")}
+            alt={car.make + " " + car.model + "top view"}
+            className="mx-auto object-contain"
+          />
         </div>
 
         <div className="rounded flex-1 flex relative h-30 bg-primary-blue-100">
-          <img src={getImage(car, "13")} className="mx-auto object-contain" />
+          <img
+            src={getImage(car, "13")}
+            alt={car.make + " " + car.model + "rear view"}
+            className="mx-auto object-contain"
+          />
         </div>
       </div>
     </div>

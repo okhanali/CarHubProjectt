@@ -30,7 +30,7 @@ const Hero: FC = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <Button text="Arabaları Keşfet" designs="mt-12" />
+          <Button name="explore" text="Arabaları Keşfet" designs="mt-12" />
         </motion.div>
       </div>
 
@@ -44,6 +44,7 @@ const Hero: FC = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-primary-blue/30 to-accent/30 rounded-full blur-3xl -z-10" />
           <img
             src="/hero.png"
+            alt="gray bmw"
             className="object-contain xl:w-[600px] xl:h-[477px] drop-shadow-xl"
           />
         </motion.div>

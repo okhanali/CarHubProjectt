@@ -46,7 +46,7 @@ const Info: FC<Props> = ({ car }) => {
           animate="visible"
           className="flex-center flex-col gap-1"
         >
-          <img src={item.icon} width={25} height={25} />
+          <img src={item.icon} alt="icon" width={25} height={25} />
           <p>{item.text}</p>
         </motion.div>
       ))}

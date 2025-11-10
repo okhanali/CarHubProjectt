@@ -48,9 +48,12 @@ const SearchBar: FC = () => {
       {/* Marka */}
       <div className="searchbar-item items-end">
         <div className="w-full flex flex-col z-[49]">
-          <label className="font-semibold mb-2 text-sm">Marka</label>
+          <label htmlFor="make" className="font-semibold mb-2 text-sm">
+            Marka
+          </label>
 
           <ReactSelect
+            inputId="make"
             options={options}
             styles={selectStyles}
             onChange={(option) => setMake(option!.value)}
@@ -62,8 +65,8 @@ const SearchBar: FC = () => {
           />
         </div>
 
-        <button className="search-btn mb-1 sm:hidden">
-          <img src="/search.svg" className="size-6 invert" />
+        <button name="search" className="search-btn mb-1 sm:hidden">
+          <img src="/search.svg" alt="search" className="size-6 invert" />
         </button>
       </div>
 
@@ -73,13 +76,17 @@ const SearchBar: FC = () => {
 
         <div className="w-full flex items-center">
           <div className="relative flex-1">
-            <img
-              src="/model-icon.png"
-              className="size-6 absolute left-4 top-1/2 -translate-y-1/2 z-1"
-            />
+            <label htmlFor="model">
+              <img
+                src="/model-icon.png"
+                alt="search"
+                className="size-6 absolute left-4 top-1/2 -translate-y-1/2 z-1"
+              />
+            </label>
 
             <input
               type="text"
+              id="model"
               className="searchbar-input"
               placeholder="Model Yazınız..."
               onChange={(e) => setModel(e.target.value)}
@@ -87,8 +94,8 @@ const SearchBar: FC = () => {
             />
           </div>
 
-          <button className="search-btn  ">
-            <img src="/search.svg" className="size-6 invert" />
+          <button name="search" className="search-btn  ">
+            <img src="/search.svg" alt="search" className="size-6 invert" />
           </button>
         </div>
       </div>
